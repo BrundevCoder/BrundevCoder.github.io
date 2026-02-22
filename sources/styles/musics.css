@@ -1,0 +1,113 @@
+.music-carrousel {
+  margin: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff44;
+  backdrop-filter: blur(10px);
+  min-width: fit-content;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.music-carrousel, h2, h3 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.music-carrousel h2 {
+  font-size: 2rem;
+}
+
+.music-carrousel h3 {
+  font-size: 1.75rem;
+}
+
+.music-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 10px;
+}
+
+.music-card {
+  font-size: 2.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-areas: 
+  "intro"
+  "info";
+  background: #75737121;
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  max-width: 650px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 350ms ease;
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.song-img {
+  grid-area: "intro";
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 100%;
+  border-radius: 15%;
+}
+
+.song-info {
+  grid-area: "info";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+#song-name {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+#listenners {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+#year {
+  background: #eec195;
+  border: 2px solid #ad651d;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ad651d81;
+}
+
+.to-app {
+  text-decoration: none;
+  color: black;
+}
+
+/*QUERIES*/
+@media (max-width: 650px) {
+  .music-carrousel h2 {
+    font-size: 1.3rem;
+  }
+  .music-carrousel h3 {
+    font-size: 1rem;
+  }
+  .music-card {
+    font-size: 1.2rem;
+  }
+  .song-info {
+    justify-content: center;
+  }
+}

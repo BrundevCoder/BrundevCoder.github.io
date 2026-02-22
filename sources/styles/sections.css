@@ -1,0 +1,231 @@
+.centralized {
+  display: flex;
+}
+
+.intro-sec {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  padding: 2rem;
+  background: #ffffff44;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  min-width: fit-content;
+  animation: asd 5s ease infinite;
+}
+
+@keyframes asd {
+  0% {border-radius: 12px 12px;}
+  50% {border-radius: 120px 120px;}
+  100% {border-radius: 12px 12px;}
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bandinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.imgstats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.bandinfo img {
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.35s ease;
+  max-width: 300px;
+  min-width: 15px;
+}
+
+.bandinfo img:hover {
+  border-radius: 100px;
+  transform: rotate(360deg);
+  filter: contrast(2);
+  box-shadow: 0 0 0 0;
+  animation: scale 0.35s ease;
+}
+
+@keyframes scale {
+  0% {transform: scale(0.6);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+.imgstats ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.imgstats ul li {
+  font-size: 1.55rem;
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: system-ui;
+}
+
+.decp {
+  font-size: 1.55rem;
+  font-family: Arial, sans-serif;
+}
+
+#band-title {
+  background: linear-gradient(
+    45deg,
+    #3a391f, #ffff00
+  );
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: animtxt 2s ease infinite;
+  margin-top: 1.5rem;
+}
+
+.anim-txt {
+  background: linear-gradient(
+    45deg,
+    #3a391f, #ffff00
+  );
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: animtxt 3s ease-in infinite;
+  font-weight: bold;
+}
+
+.find-us {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.find-us h3 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.find-us ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.find-us ul li {
+  font-size: 5.5rem;
+  transition: 300ms ease-out;
+}
+
+.find-us ul li a {
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
+}
+
+.find-us ul li:nth-child(1) a {
+  color: transparent;
+  background: linear-gradient(
+  165deg,
+  rgb(3, 245, 87) 65%, 
+  rgb(0, 0, 0));
+  background-clip: text;
+}
+
+.find-us ul li:nth-child(2) a {
+  background: linear-gradient( #ff4e6b, #ff0436);
+  background-clip: text;
+  color: transparent;
+}
+
+.find-us ul li:nth-child(3) a {
+  background: linear-gradient( #f05555, #ff0404);
+  background-clip: text;
+  color: transparent;
+}
+
+.find-us ul li:not(:hover) {
+  filter: blur(0.2px);
+}
+
+.find-us ul li:hover {
+  animation: animIcon 1.25s ease infinite;
+}
+
+.find-us ul li:active {
+  animation-play-state: paused;
+}
+
+/*ANIMATIONS*/
+
+@keyframes animIcon {
+  0% {transform: scale(1); filter: opacity(0.15) contrast(1) blur(0);}
+  50% {transform: scale(0.5) translateY(22px); filter: opacity(0.4);}
+  65% {transform: scale(1.5); filter: opacity(0.15) contrast(3);}
+  100% {transform: scale(1); filter: opacity(1);}
+}
+
+@keyframes animtxt {
+  0% {background-size: 100% 100%;}
+  50% {background-size: 400% 100%;}
+  100% {background-size: 100% 100%;}
+}
+
+/*QUERIES*/
+
+@media (max-width: 400px) {
+  .decp {
+    font-size: 1.25rem;
+  }
+  .intro-sec {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .find-us h3 {
+    font-size: 2rem;
+  }
+  .find-us ul li {
+    font-size: 3rem;
+  }
+  .intro-sec {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .intro-sec {
+    margin-left: 0.35rem;
+    margin-right: 0.35rem;
+  }
+  .find-us h3 {
+    font-size: 1rem;
+  }
+}
