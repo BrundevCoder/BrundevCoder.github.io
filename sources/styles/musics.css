@@ -52,14 +52,22 @@
   padding: 1rem;
   border-radius: 12px;
   backdrop-filter: blur(10px);
-  max-width: 650px;
+  max-width: 400px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border: solid transparent 2px;
   transition: 350ms ease;
 }
 
 .music-card:hover {
   transform: translateY(-5px);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
+  border: solid #333 2px;
+}
+
+.music-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
+  border: solid #333 2px;
 }
 
 .song-img {
@@ -120,5 +128,14 @@
   }
   .music-card {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .music-carrousel h2 {
+    font-size: .9rem;
+  }
+  .music-carrousel h3 {
+    font-size: 0.7rem;
   }
 }
