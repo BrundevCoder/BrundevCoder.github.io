@@ -7,6 +7,8 @@
 body {
   background: url("../imgs/paper.png");
   background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: 100%;
   padding: 0;
   margin: 0;
   min-width: 100%;
@@ -56,6 +58,11 @@ body {
   font-size: 1.55rem;
   font-weight: bold;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  transition: 250ms ease;
+}
+
+#band:hover {
+  color: #47471d;
 }
 
 #hamburger-menu { 
@@ -72,7 +79,7 @@ body {
 
 .warner-container {
   background: #efef65;
-  border: solid 3px #47471d;
+  border-bottom: solid 3px #47471d;
   text-align: center;
   padding: 1rem;
 }
@@ -80,7 +87,6 @@ body {
 .warner-container span {
   font-family: Arial;
   font-weight: bold;
-  color: #47471d;
   font-size: 1.5rem;
 }
 
