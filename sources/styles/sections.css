@@ -27,6 +27,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: anim 1s ease;
+}
+
+@keyframes anim {
+  from {opacity: 0; transform: translateY(5px);}
+  to {opacity: 1;}
 }
 
 .bandinfo {
