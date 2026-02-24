@@ -1,5 +1,6 @@
 .music-carrousel {
   margin: 5rem;
+  margin-top: 0.5rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -107,6 +108,10 @@
 
 /*QUERIES*/
 @media (max-width: 650px) {
+  .music-carrousel {
+    margin: 2rem;
+    padding: 1rem;
+  }
   .music-carrousel h2 {
     font-size: 1.3rem;
   }
