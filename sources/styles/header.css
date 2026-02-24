@@ -67,3 +67,45 @@ body {
   text-decoration: none;
   user-select: none;
 }
+
+/*Warner Box*/
+
+.warner-container {
+  background: #efef65;
+  border: solid 3px #47471d;
+  text-align: center;
+  padding: 1rem;
+}
+
+.warner-container span {
+  font-family: Arial;
+  font-weight: bold;
+  color: #47471d;
+  font-size: 1.5rem;
+}
+
+/*Medias*/
+
+@media (max-width: 350px) {
+  .warner-container span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .left {
+    padding: 0;
+  }
+  .right {
+    padding: 0;
+  }
+  .middle {
+    padding: 0;
+  }
+}
