@@ -59,7 +59,7 @@ main {
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: 0.35s ease;
-  max-width: 300px;
+  max-width: 150px;
   min-width: 15px;
 }
 
@@ -109,6 +109,8 @@ h2 {
   color: transparent;
   animation: animtxt 2s ease infinite;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-wrap: nowrap;
 }
 
 .anim-txt {
@@ -223,6 +225,9 @@ h2 {
   }
   .intro-sec {
     padding: 1rem;
+  }
+  #band-title {
+    font-size: 2.1rem;
   }
 }
 
