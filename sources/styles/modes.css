@@ -1,0 +1,17 @@
+:root {
+  --header-back: #fff;
+  --glass-back: #ffffff44;
+  --normal-txt: #000;
+  --linear-txt: linear-gradient(45deg,#3a391f, #ffff00);
+  --hover-border: solid #333 2px;
+  --normal-icon-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+  --header-back: #333;
+  --glass-back: #020202a4;
+  --normal-txt: #fff;
+  --linear-txt: linear-gradient(45deg,#e1e0b8, #ffff00);
+  --hover-border: solid #ddd 2px;
+  --normal-icon-shadow: 10px 10px 5px rgba(220, 220, 220, 0.15);
+}
