@@ -15,7 +15,7 @@
   to {transform: translateY(0);}
 }
 
-.nav-container ul {
+.nav-container .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,9 +23,10 @@
   gap: 1.5rem;
   list-style: none;
   width: 100%;
+  margin-bottom: 25px;
 }
 
-.nav-container ul li {
+.nav-container .links li {
   text-align: center;
   width: 10%;
   background: #aeaeae25;
@@ -36,15 +37,15 @@
   transition: border-bottom 250ms ease;
 }
 
-.nav-container ul li:hover {
+.nav-container .links li:hover {
   border-bottom: solid 3px #e4dd10;
 }
 
-.nav-container ul li.selected {
+.nav-container .links li.selected {
   border-bottom: solid 3px #777900;
 }
 
-.nav-container ul li a {
+.nav-container .links li a {
   font-family: Arial;
   font-weight: bold;
   font-size: 1.25rem;
@@ -52,21 +53,83 @@
   color: var(--normal-txt);
 }
 
+/*Socials*/
+
+.nav-container .socials-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.socials-nav li {
+  text-align: center;
+  width: 10%;
+  background: #6eb4c5;
+  border-radius: 12px;
+  padding: 1rem;
+  border-bottom: solid 3px transparent;
+  margin-top: 1rem;
+  transition: border-bottom 250ms ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.socials-nav li a {
+  color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+.socials-nav li:hover {
+  border-color: #01629e;
+}
+
+.socials-nav li:nth-child(1) a {
+  background: linear-gradient(
+    135deg,
+    #f9ce34, #ee2a7b, #6228d7
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.socials-nav li:nth-child(2) a {
+  background: linear-gradient(
+    135deg,
+    #18a5fc, #095ab0
+  );
+  background-clip: text;
+  color: transparent;
+}
+
 /*MEDIA*/
 
 @media (max-width: 900px) {
-  .nav-container ul li {
+  .nav-container .links li {
     width: calc(20% + 1rem);
+  }
+  .nav-container .socials-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials-nav li {
+    width: 100%;
   }
 }
 
 @media (max-width: 400px) {
-  .nav-container ul {
+  .nav-container .links {
     flex-direction: column;
     justify-content: flex;
     align-items: center;
   }
-  .nav-container ul li {
+  .nav-container .links li {
     width: 100%;
   }
 }
