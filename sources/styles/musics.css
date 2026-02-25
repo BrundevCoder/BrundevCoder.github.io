@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ffffff44;
+  background: var(--glass-back);
   backdrop-filter: blur(10px);
   min-width: fit-content;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -14,8 +14,10 @@
 }
 
 .music-carrousel, h2, h3 {
+  color: var(--normal-txt);
   text-align: center;
   font-family: Arial, sans-serif;
+  transition: 300ms ease;
 }
 
 .music-carrousel h2 {
@@ -36,7 +38,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 2.5rem;
   margin-top: 10px;
 }
@@ -52,7 +53,7 @@
   padding: 1rem;
   border-radius: 12px;
   backdrop-filter: blur(10px);
-  max-width: 400px;
+  max-width: 400px; /*400px*/
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   border: solid transparent 2px;
   transition: 350ms ease;
@@ -61,13 +62,13 @@
 .music-card:hover {
   transform: translateY(-5px);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
-  border: solid #333 2px;
+  border: var(--hover-border);
 }
 
 .music-card:focus {
   transform: translateY(-5px);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
-  border: solid #333 2px;
+  border: var(--hover-border);
 }
 
 .song-img {
@@ -95,6 +96,7 @@
 }
 
 #listenners {
+  color: var(--normal-txt);
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
@@ -128,6 +130,14 @@
   }
   .music-card {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .song-info {
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 
