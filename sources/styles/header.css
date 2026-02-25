@@ -20,7 +20,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: var(--header-back);
+  transition: 300ms ease;
 }
 
 .icon {
@@ -58,15 +59,18 @@ body {
   font-size: 1.55rem;
   font-weight: bold;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  transition: 250ms ease;
+  color: var(--normal-txt);
+  transition: 300ms ease;
 }
 
 #band:hover {
-  color: #47471d;
+  color: #7d7d30;
 }
 
-#hamburger-menu { 
+#hamburger-menu {
   font-size: 2rem;
+  color: var(--normal-txt);
+  transition: 300ms ease;
 }
 
 #main-link {
