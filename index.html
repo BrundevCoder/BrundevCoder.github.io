@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="sources/styles/musics.css">
   <link rel="stylesheet" href="sources/styles/theme-toogle.css">
   <link rel="stylesheet" href="sources/styles/modes.css">
+  <link rel="stylesheet" href="sources/styles/menu.css">
   <!-- Info -->
   <meta name="keywords" content="TUA, banda, Póvoa, música portuguesa, portuguese music, rock, band, pt">
   <link rel="icon" href="sources/imgs/TUA.jpg">
@@ -39,11 +40,20 @@
     <div class="right"><span id="hamburger-menu">&#9776;</span></div>
   </header>
 
+  <nav id="menu" class="nav-container open">
+    <ul>
+      <li class="selected"><a href="#">Home</a></li>
+      <li><a href="#">Soon</a></li>
+      <li><a href="#">Soon</a></li>
+      <li><a href="#">Soon</a></li>
+    </ul>
+  </nav>
+
   <main>
     <!-- TODO: all info here -->
     <section class="centralized intro-sec">
       <div class="bandinfo">
-        <img loading="lazy" src="sources/imgs/TUA.jpg" alt="Os TUA icon">
+        <img id="tua-logo" loading="lazy" src="sources/imgs/TUA.jpg" alt="Os TUA icon">
         <h2 id="band-title">Os TUA</h2>
         <p class="decp"><span class="anim-txt">Os Tua</span> são uma banda da <span class="anim-txt">Póvoa de
             Varzim</span>, com um currículo que já conta com passagens pelo Enterro da Gata (abrindo para Capitão
@@ -128,11 +138,12 @@
   <div class="theme-div">
     <button id="btn-toogle" class="btn-theme">
       <span id="btn-span" class="material-symbols-outlined">
-        dark_mode
+        
       </span>
     </button>
   </div>
 
   <script src="sources/scripts/toogleMode.js"></script>
+  <script src="sources/scripts/menu.js"></script>
 </body>
 </html>
