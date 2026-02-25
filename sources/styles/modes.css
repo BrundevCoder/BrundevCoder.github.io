@@ -1,6 +1,6 @@
 :root {
   --header-back: #fff;
-  --glass-back: #ffffff44;
+  --glass-back: #ffffff90;
   --normal-txt: #000;
   --linear-txt: linear-gradient(45deg,#3a391f, #ffff00);
   --hover-border: solid #333 2px;
@@ -9,7 +9,7 @@
 
 body.dark {
   --header-back: #333;
-  --glass-back: #020202a4;
+  --glass-back: #000000a2;
   --normal-txt: #fff;
   --linear-txt: linear-gradient(45deg,#e1e0b8, #ffff00);
   --hover-border: solid #ddd 2px;
