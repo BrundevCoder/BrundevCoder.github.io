@@ -14,6 +14,10 @@ body {
   min-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -21,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: var(--header-back);
+  z-index: 3;
   transition: 300ms ease;
 }
 
@@ -68,9 +73,23 @@ body {
 }
 
 #hamburger-menu {
+  display: inline-block;
+  user-select: none;
+  border-radius: 25%;
+  background: var(--hmb-menu-hover-bg);
+  padding: 0.5rem 0.7rem;
   font-size: 2rem;
-  color: var(--normal-txt);
+  color: var(--hmb-menu-hover-txt);
+  cursor: pointer;
   transition: 300ms ease;
+}
+
+#hamburger-menu:hover {
+  transform: scale(0.9);
+}
+
+#hamburger-menu:active {
+  transform: scale(0.85);
 }
 
 #main-link {
