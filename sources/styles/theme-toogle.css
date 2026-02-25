@@ -1,0 +1,53 @@
+.theme-div {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 10;
+}
+
+.btn-theme {
+  border-radius: 50%;
+  margin: 5px;
+  margin-bottom: 10px;
+  border: solid #9d9d32 3px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #efef65 55%, #47471d
+  );
+  transition: 120ms ease;
+}
+
+.btn-theme span{
+  font-size: 3rem;
+  padding: 1rem;
+  color: #111;
+}
+
+.btn-theme:hover {
+  transform: scale(0.95);
+}
+
+.btn-theme:active {
+  transform: scale(0.85);
+}
+
+/*Media*/
+
+@media (max-width: 425px) {
+  .btn-theme span {
+    font-size: 2rem;
+    padding: 0.85rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .btn-theme span {
+    font-size: 1.5rem;
+    padding: 0.65rem;
+  }
+}
