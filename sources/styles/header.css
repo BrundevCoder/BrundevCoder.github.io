@@ -6,7 +6,7 @@
 
 body {
   background: url("../imgs/paper.png");
-  background-attachment: scroll;
+  background-attachment: fixed; /*Use Scroll if laggy*/
   background-repeat: repeat-y;
   background-size: 100%;
   padding: 0;
