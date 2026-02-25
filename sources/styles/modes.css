@@ -1,5 +1,7 @@
 :root {
   --header-back: #fff;
+  --hmb-menu-hover-txt: #000;
+  --hmb-menu-hover-bg: #9f9f9f48;
   --glass-back: #ffffff90;
   --normal-txt: #000;
   --linear-txt: linear-gradient(45deg,#3a391f, #ffff00);
@@ -9,6 +11,7 @@
 
 body.dark {
   --header-back: #333;
+  --hmb-menu-hover-txt: #fff;
   --glass-back: #000000a2;
   --normal-txt: #fff;
   --linear-txt: linear-gradient(45deg,#e1e0b8, #ffff00);
