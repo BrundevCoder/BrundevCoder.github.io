@@ -7,7 +7,6 @@
   align-items: center;
   flex-direction: column;
   background: var(--glass-back);
-  backdrop-filter: blur(10px);
   min-width: fit-content;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
@@ -49,10 +48,9 @@
   grid-template-areas: 
   "intro"
   "info";
-  background: #75737121;
+  background: #9e9e9e34;
   padding: 1rem;
   border-radius: 12px;
-  backdrop-filter: blur(10px);
   max-width: 400px; /*400px*/
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   border: solid transparent 2px;
