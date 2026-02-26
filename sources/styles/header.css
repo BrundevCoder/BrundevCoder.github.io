@@ -19,6 +19,9 @@ html {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
