@@ -26,7 +26,6 @@ function toogle() {
 btn.addEventListener("click", toogle);
 
 // when init, put moon icon
-
 btnText.textContent = ""; // reset
 
 setTimeout(() => {
