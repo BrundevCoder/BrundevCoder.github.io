@@ -4,6 +4,7 @@ const DEBUG = true;
 
 const btn = document.getElementById("btn-toogle");
 const btnText = document.getElementById("btn-span");
+const bandImg = document.getElementById("tua-logo");
 
 const moon = "dark_mode";
 const sun = "light_mode";
@@ -25,6 +26,9 @@ function toogle() {
 btn.addEventListener("click", toogle);
 
 // when init, put moon icon
+
+btnText.textContent = ""; // reset
+
 setTimeout(() => {
   btnText.textContent = moon;
 }, 0o100);
